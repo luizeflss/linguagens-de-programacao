@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chevrolet | Fiat</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+            color: #222;
+        }
+
+        .container{
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        p.descricao{
+            text-align: center;
+            margin-bottom: 30px;
+            color: #555;
+        }
+
+        .img-topo{
+            display: block;
+            width: 180px;
+            margin: 0 auto 20px auto;
+            border-radius: 10px;
+        }
+
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: #fff;
+        }
+
+        th, td{
+            border: 1px solid #333;
+            padding: 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        thead th{
+            background-color: #dcdcdc;
+            font-weight: bold;
+        }
+
+        tbody tr:nth-child(even){
+            background-color: #f9f9f9;
+        }
+
+        tfoot td{
+            background-color: #efefef;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .col-marca{
+            width: 30%;
+        }
+        .col-ano{
+            width: 40%;
+        }
+        .col-ano{
+            width: 30%;
+        }
+
+        .imagem-carros{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .imagem-carros img{
+            width: 120px;
+            height: auto;
+            border: 1px solid #ccc;
+            border-radius: 12px;
+        }
+
+        .rodape-img{
+            display: block;
+            width: 120px;
+            margin: 25px auto 0 auto;
+            opacity: 0.9;
+        }
+        .rodape-img2{
+            display: block;
+            width: 120px;
+            margin: 25px auto 0 auto;
+            opacity: 0.9;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <img class="img-topo" src="./img/carros/omega98.png" alt="Chevrolet Omega 2.2 1998">
+
+        <h1>Modelos de Carros Dísponiveis</h1>
+
+        <p class="descricao">
+            Melhores Carros das Montadoras Fiat e Chevrolet
+        </p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th class="col-marca">Marca</th>
+                    <th class="col-modelo">Modelo</th>
+                    <th class="col-ano">Ano</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="4">CHEVROLET</td>
+                    <td>
+                        <div class="imagem-carros">
+                            <img src="./img/carros/omega98.png" alt="Chevrolet Omega 2.2 1998">
+                            <span>Omega</span>
+                        </div>
+                    </td>
+                    <td>1998</td>
+                </tr>
+                <tr>
+                <td>
+                        <div class="imagem-carros">
+                            <img src="./img/carros/monza96.webp" alt="Chevrolet Monza 2.0 1996">
+                            <span>Monza</span>
+                        </div>
+                    </td>
+                    <td>1996</td>
+                </tr>
+                <tr>
+                <td>
+                        <div class="imagem-carros">
+                            <img src="./img/carros/silverado96.jpg" alt="Chevrolet Silverado 2.4 1996">
+                            <span>Silverado</span>
+                        </div>
+                    </td>
+                    <td>1996</td>
+                </tr>
+                <tr>
+                <td>
+                        <div class="imagem-carros">
+                            <img src="./img/carros/astra2011.jpg" alt="Chevrolet Astra 2.0 2011 ">
+                            <span>Astra</span>
+                        </div>
+                    </td>
+                    <td>2011</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">FIAT</td>
+                    <td>
+                        <div class="imagem-carros">
+                            <img src="./img/carros/marea1998.png" alt="FIAT Marea 1.6 1998">
+                            <span>Marea</span>
+                        </div>
+                    </td>
+                    <td>1998</td>
+                </tr>
+                <tr>
+                <td>
+                        <div class="imagem-carros">
+                            <img src="./img/carros/palio97.jpeg" alt="FIAT Palio 1997">
+                            <span>Palio</span>
+                        </div>
+                    </td>
+                    <td>1997</td>
+                </tr>
+                <tr>
+                <td>
+                        <div class="imagem-carros">
+                            <img src="./img/carros/tempra97.webp" alt="FIAT Tempra 2.0 1998">
+                            <span>Tempra</span>
+                        </div>
+                    </td>
+                    <td>1998</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Ultima Atualização: 27/03/2026</td>
+                </tr>
+            </tfoot>
+        </table>
+        <img class="rodape-img" src="./img/logo/logoFiat.jpg" alt="Logomarca">
+        <img class="rodape-img2" src="./img/logo/logoChevrolet.webp" alt="Logomarca">
+    </div>
+</body>
+</html>
