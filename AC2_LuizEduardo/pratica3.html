@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnologia Moderna</title>
+
+    <!-- css externo -->
+    <link rel="stylesheet" href="./pratica3.css">
+
+    <!-- css interno -->
+    <style>
+
+    .interno{
+        text-align: center;
+        color: green;
+        font-size: 22px;
+        margin: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    figure{
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    figure img{
+        width: 500px;
+        border: 5px solid blue;
+        border-radius: 10px;
+    }
+
+    figcaption{
+        margin-top: 10px;
+        font-style: italic;
+        color: #444;
+    }
+
+  </style>
+</head>
+<body>
+
+    <!-- css inline -->
+    <h1 style="color:red; text-align:center; margin:20px; font-family:Verdana;">
+        O Futuro da Tecnologia
+    </h1>
+
+    <!-- css interno -->
+    <p class="interno">
+        A tecnologia evolui rapidamente e transforma a forma como vivemos,
+        estudamos e trabalhamos diariamente.
+    </p>
+
+    <!-- css externo -->
+    <p class="externo">
+        Inteligência artificial, computação em nuvem e robótica são algumas
+        das áreas mais importantes da inovação atual.
+    </p>
+
+    <figure>
+        <img src="https://i.ytimg.com/vi/I82c1R7VTs8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAHy2n9hx-WqGVMP_rwPSb4QgyExw"
+            alt="Tecnologia Moderna">
+        <figcaption>
+            Fiat Palio EDX 1997 - Vulgo melhor carro em seu ano de lançamento.
+        </figcaption>
+    </figure>
+
+</body>
+
+<!--
+prioridades:
+
+1º Inline
+2º Interno
+3º Externo
+
+O CSS inline teve prioridade porque ele é aplicado diretamente
+na tag HTML, sobrescrevendo os estilos internos e externos.
+-->
+
+</html>

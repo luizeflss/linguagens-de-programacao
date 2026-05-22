@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Praias do Brasil | HTML5 Avançando</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="hero hero-secundario" id="topo">
+    <nav class="menu" aria-label="Navegação principal">
+      <a class="logo" href="index.html">Praias do Brasil</a>
+      <ul class="menu-links">
+        <li><a href="#elementos">Novos elementos</a></li>
+        <li><a href="#formularios">Formulários</a></li>
+        <li><a href="#recursos">Recursos HTML5</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero-conteudo">
+      <p class="eyebrow">Continuação da aula</p>
+      <h1>HTML5 do slide 28 até o final, aplicado ao tema praias do Brasil</h1>
+      <p class="descricao">
+        Esta segunda página amplia o projeto com os novos elementos semânticos,
+        atributos descontinuados, validadores, conteúdo editável, revisão ortográfica,
+        drag and drop, menus e exemplos práticos.
+      </p>
+      <div class="acoes">
+        <a class="botao primario" href="#elementos">Começar conteúdo</a>
+        <a class="botao secundario" href="index.html">Voltar à página 1</a>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="secao" id="elementos">
+      <div class="secao-titulo">
+        <p class="rotulo">Slides 28 a 30</p>
+        <h2>Novos elementos e atributos do HTML5</h2>
+        <p>
+          O HTML5 trouxe elementos mais semânticos para organizar melhor o conteúdo da página.
+          Abaixo, cada definição foi aplicada ao contexto de um portal sobre praias brasileiras.
+        </p>
+      </div>
+
+      <div class="grade-definicoes">
+        <article class="card-definicao">
+          <h3><code>section</code></h3>
+          <p>Cria uma seção temática do documento.</p>
+          <p>Exemplo: uma área exclusiva para praias do Nordeste, outra para o Sudeste e outra para dicas de viagem.</p>
+        </article>
+
+        <article class="card-definicao">
+          <h3><code>nav</code></h3>
+          <p>Representa um conjunto de links importantes de navegação.</p>
+          <p>Exemplo: menu com atalhos para destinos, roteiro, curiosidades e formulário de contato.</p>
+        </article>
+
+        <article class="card-definicao">
+          <h3><code>article</code></h3>
+          <p>Indica um conteúdo independente e reutilizável.</p>
+          <p>Exemplo: um artigo individual sobre Copacabana, Jericoacoara ou Praia do Rosa.</p>
+        </article>
+
+        <article class="card-definicao">
+          <h3><code>aside</code></h3>
+          <p>Guarda conteúdos complementares ao tema principal.</p>
+          <p>Exemplo: caixa lateral com dicas de protetor solar, marés e melhor época para visitar.</p>
+        </article>
+
+        <article class="card-definicao">
+          <h3><code>header</code></h3>
+          <p>Apresenta introdução, título, logotipo ou ferramentas de navegação.</p>
+          <p>Exemplo: topo da página com chamada principal sobre o litoral brasileiro.</p>
+        </article>
+
+        <article class="card-definicao">
+          <h3><code>footer</code></h3>
+          <p>Marca o rodapé da página ou de uma seção.</p>
+          <p>Exemplo: créditos do projeto, nome da disciplina e referências usadas.</p>
+        </article>
+
+        <article class="card-definicao">
+          <h3><code>time</code></h3>
+          <p>Serve para representar datas e horários.</p>
+          <p>Exemplo: informar que a melhor época de visita vai de <time datetime="2026-12">dezembro</time> a <time datetime="2027-03">março</time>.</p>
+        </article>
+
+        <article class="card-definicao destaque-definicao">
+          <h3>Resumo semântico</h3>
+          <p>
+            Esses elementos deixam o código mais claro para pessoas, navegadores e buscadores,
+            ajudando a estruturar melhor o conteúdo do site.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="secao secao-suave" id="obsoletos">
+      <div class="secao-titulo">
+        <p class="rotulo">Slide 31</p>
+        <h2>Atributos descontinuados</h2>
+        <p>
+          Muitos atributos antigos deixaram de ser recomendados no HTML5 porque o visual
+          deve ficar no CSS e não mais misturado à estrutura do documento.
+        </p>
+      </div>
+
+      <div class="quadro-info">
+        <div class="coluna-info">
+          <h3>Exemplos antigos</h3>
+          <ul class="lista-tags">
+            <li><code>align</code></li>
+            <li><code>bgcolor</code></li>
+            <li><code>border</code></li>
+            <li><code>cellpadding</code></li>
+            <li><code>cellspacing</code></li>
+            <li><code>width</code></li>
+          </ul>
+        </div>
+
+        <div class="coluna-info">
+          <h3>Forma correta no HTML5</h3>
+          <p>
+            Em vez de controlar aparência diretamente nas tags, usamos classes e regras no
+            arquivo <code>styles.css</code>. Isso deixa o projeto mais limpo, moderno e fácil de manter.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao" id="formularios">
+      <div class="secao-titulo">
+        <p class="rotulo">Slides 34 e 35</p>
+        <h2>Validadores e formulários</h2>
+        <p>
+          O HTML5 permite validar dados sem depender totalmente de JavaScript, usando atributos
+          como <code>required</code>, <code>pattern</code>, <code>novalidate</code> e <code>formnovalidate</code>.
+        </p>
+      </div>
+
+      <div class="painel-duplo">
+        <form class="formulario formulario-avancado">
+          <label for="cep">CEP do destino</label>
+          <input id="cep" name="cep" type="text" placeholder="00000-000" pattern="[0-9]{5}-[0-9]{3}" required>
+
+          <label for="email">Seu e-mail</label>
+          <input id="email" name="email" type="email" placeholder="viajante@email.com" required>
+
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="5" placeholder="Quero receber sugestões de praias para férias em família." required></textarea>
+
+          <div class="grupo-botoes">
+            <button type="submit">Enviar</button>
+            <button type="submit" formnovalidate class="botao-alternativo">Salvar rascunho</button>
+          </div>
+        </form>
+
+        <aside class="bloco-explicacao">
+          <h3>Definições claras</h3>
+          <p><strong>pattern:</strong> cria uma regra de formato para o campo.</p>
+          <p><strong>required:</strong> torna o preenchimento obrigatório.</p>
+          <p><strong>novalidate:</strong> desativa a validação do formulário.</p>
+          <p><strong>formnovalidate:</strong> desativa a validação apenas em um botão específico.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="secao secao-suave" id="recursos">
+      <div class="secao-titulo">
+        <p class="rotulo">Slides 36 a 45</p>
+        <h2>Recursos modernos do HTML5</h2>
+      </div>
+
+      <div class="grade-recursos">
+        <article class="recurso">
+          <h3><code>details</code> e <code>summary</code></h3>
+          <details class="painel-detalhes" open>
+            <summary>Ver curiosidade sobre Fernando de Noronha</summary>
+            <p>
+              O uso de <code>details</code> permite esconder ou revelar informações sem complicar a estrutura da página.
+            </p>
+          </details>
+        </article>
+
+        <article class="recurso">
+          <h3><code>contenteditable</code></h3>
+          <div class="bloco-editavel" contenteditable="true" spellcheck="true">
+            Edite este texto: descreva aqui sua praia favorita do Brasil.
+          </div>
+        </article>
+
+        <article class="recurso">
+          <h3><code>drag and drop</code></h3>
+          <p>
+            Neste exemplo, você pode arrastar o cartão da praia e soltá-lo na área de destino,
+            depois retirá-lo e levá-lo de volta para a área original, demonstrando o uso de
+            <code>dragstart</code>, <code>dragover</code> e <code>drop</code>.
+          </p>
+          <div class="area-drag">
+            <div class="alvo-drop zona-origem" data-dropzone="true">
+              <p class="titulo-drop">Área de origem</p>
+              <div id="praia-arrastavel" class="cartao-arrastavel" draggable="true">Arraste: Praia do Forte</div>
+            </div>
+            <div class="alvo-drop" data-dropzone="true">
+              <p class="titulo-drop">Área de destino</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="recurso">
+          <h3><code>spellcheck</code></h3>
+          <p>
+            A revisão ortográfica pode ser ativada em campos de texto para ajudar o usuário a escrever melhor.
+          </p>
+          <input class="campo-revisao" type="text" spellcheck="true" value="Praia paradisiaca no litoral brasileiro">
+        </article>
+
+        <article class="recurso">
+          <h3><code>menu</code> e toolbar</h3>
+          <p>
+            A ideia é agrupar ações e comandos em menus. Embora o suporte visual em navegadores modernos varie,
+            o conceito faz parte do conteúdo apresentado na aula.
+          </p>
+          <div class="menu-demo">
+            <div class="menu-acoes" role="menu" aria-label="Menu de acoes da praia">
+              <button type="button" class="acao-menu" data-texto="Novo roteiro criado para explorar praias do Nordeste.">Novo roteiro</button>
+              <button type="button" class="acao-menu" data-texto="Guia aberto com dicas de marés, hospedagem e passeios.">Abrir guia</button>
+              <button type="button" class="acao-menu" data-texto="Roteiro salvo com sucesso para consultar depois.">Salvar</button>
+            </div>
+
+            <div class="barra-ferramentas" role="toolbar" aria-label="Barra de ferramentas de visualizacao">
+              <button type="button" class="acao-toolbar" data-modo="normal">Visual normal</button>
+              <button type="button" class="acao-toolbar" data-modo="destaque">Modo destaque</button>
+              <button type="button" class="acao-toolbar" data-modo="compacto">Modo compacto</button>
+            </div>
+
+            <div class="painel-toolbar" id="painel-toolbar">
+              <p class="painel-legenda">Resultado da interatividade</p>
+              <p id="texto-toolbar">Escolha uma ação do menu ou da toolbar para ver a resposta aqui.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="recurso destaque-definicao">
+          <h3>Fechamento da aula</h3>
+          <p>
+            Do slide 28 até o final, o foco está em tornar o HTML5 mais semântico, prático,
+            interativo e preparado para aplicações web modernas.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="secao">
+      <div class="secao-titulo">
+        <p class="rotulo">Referência</p>
+        <h2>Documentação citada na aula</h2>
+        <p>
+          A especificação do HTML pode ser consultada em
+          <a class="link-card" href="https://html.spec.whatwg.org/multipage/" target="_blank" rel="noopener noreferrer">WHATWG HTML Living Standard</a>.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>Segunda página do projeto: continuação do conteúdo de HTML5.</p>
+    <p>Slides contemplados: 28 até o último, com exemplos ligados ao tema praias do Brasil.</p>
+  </footer>
+  <script>
+    const itemArrastavel = document.getElementById("praia-arrastavel");
+    const zonasDeSoltura = document.querySelectorAll("[data-dropzone='true']");
+
+    if (itemArrastavel && zonasDeSoltura.length > 0) {
+      itemArrastavel.addEventListener("dragstart", (event) => {
+        event.dataTransfer.setData("text/plain", event.target.id);
+        event.dataTransfer.effectAllowed = "move";
+        itemArrastavel.classList.add("arrastando");
+      });
+
+      itemArrastavel.addEventListener("dragend", () => {
+        itemArrastavel.classList.remove("arrastando");
+        zonasDeSoltura.forEach((zona) => zona.classList.remove("drop-ativo"));
+      });
+
+      zonasDeSoltura.forEach((zona) => {
+        zona.addEventListener("dragover", (event) => {
+          event.preventDefault();
+          event.dataTransfer.dropEffect = "move";
+          zona.classList.add("drop-ativo");
+        });
+
+        zona.addEventListener("dragleave", () => {
+          zona.classList.remove("drop-ativo");
+        });
+
+        zona.addEventListener("drop", (event) => {
+          event.preventDefault();
+          const id = event.dataTransfer.getData("text/plain");
+          const elemento = document.getElementById(id);
+
+          if (elemento) {
+            zona.appendChild(elemento);
+            zona.classList.remove("drop-ativo");
+          }
+        });
+      });
+    }
+
+    const painelToolbar = document.getElementById("painel-toolbar");
+    const textoToolbar = document.getElementById("texto-toolbar");
+    const botoesMenu = document.querySelectorAll(".acao-menu");
+    const botoesToolbar = document.querySelectorAll(".acao-toolbar");
+
+    botoesMenu.forEach((botao) => {
+      botao.addEventListener("click", () => {
+        textoToolbar.textContent = botao.dataset.texto;
+      });
+    });
+
+    botoesToolbar.forEach((botao) => {
+      botao.addEventListener("click", () => {
+        painelToolbar.classList.remove("modo-normal", "modo-destaque", "modo-compacto");
+        painelToolbar.classList.add(`modo-${botao.dataset.modo}`);
+
+        if (botao.dataset.modo === "normal") {
+          textoToolbar.textContent = "Visual normal ativado para leitura confortável do conteúdo sobre praias.";
+        }
+
+        if (botao.dataset.modo === "destaque") {
+          textoToolbar.textContent = "Modo destaque ativado para enfatizar avisos e pontos importantes do roteiro.";
+        }
+
+        if (botao.dataset.modo === "compacto") {
+          textoToolbar.textContent = "Modo compacto ativado para resumir as informações de viagem em um bloco menor.";
+        }
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,542 @@
+:root {
+    --areia: #f3e7c9;
+    --espuma: #fffaf1;
+    --oceano: #0a5c78;
+    --oceano-profundo: #073b4c;
+    --turquesa: #16a6b6;
+    --sol: #f5a623;
+    --coral: #eb6f4d;
+    --texto: #13313f;
+    --texto-suave: #4f6c77;
+    --borda: rgba(7, 59, 76, 0.12);
+    --sombra: rgba(7, 59, 76, 0.16);
+}
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-family: sans-serif;
+    /* Instalar fonte com Google API's, para próxima aula > Manrope */
+    color: var(--texto);
+    background: radial-gradient(circle at top right,
+     rgba(245, 166, 35, 0.18), transparent 18%), 
+    linear-gradient(180deg, #f6fbfc 0%, #eef7f8 35%, #fff9f1 100%);
+}
+img {
+    display: block;
+    width: 100%;
+}
+a {
+    color: inherit;
+}
+/* Tratar os class na próxima aula > 28/04/2026 */
+
+.hero {
+    min-height: 100vh;
+    padding: 1.5rem 6vw 4rem;
+    background: 
+    linear-gradient(rgba(7, 59, 76, 0.92),
+    rgba(22, 166, 182, 0.68)),
+    url("https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1600&q=80") center/cover;
+    /* No css somente com a tag URL que conseguimos adicionar imagens Exemplo: [ ../img/imagem-1.jpg ]*/
+    color: #ffffff;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-family: 'Fraunces', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.menu-links {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menu-links a {
+    text-decoration: none;
+    padding: 0.6rem 0.95rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.12);
+}
+.hero-conteudo {
+    max-width: 720px;
+    padding: 12vh 0 0;
+}
+.eyebrow,
+.rotulo {
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 0.78rem;
+    font-weight: 700;
+}
+.hero,
+.secao h2,
+.bloco-guia h3,
+.dicas h3 {
+    font-family: 'Fraunces', sans-serif;
+}
+.hero h1 {
+    margin: 0.5rem 0 1rem;
+    font-size: clamp(2.7rem, 6vh, 5.2rem);
+    /* clamp - para definir um tamanho de fonte que escala responsivamente, a função possui 3 parâmetros, um valor mínimo, um valor preferencial, e um máximo. */
+    line-height: 0.95;
+}
+.descricao {
+    max-width: 58ch;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.88);
+}
+.acoes {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+.botao-primario,
+.botao-secundario {
+    display: inline-block;
+    padding: 0.95rem 1.4rem;
+    border-radius: 999px;
+    font-weight: 700;
+    text-decoration: none;
+}
+.botao-primario {
+    background: var(--sol);
+    color: #08212c;
+}
+.botao-secundario {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.1);
+}
+.secao {
+    padding: 5rem 6vw;
+}
+.secao-titulo {
+    max-width: 760px;
+    margin-bottom: 2.4rem;
+}
+.secao h2 {
+    margin: 0.35rem 0 0.8rem;
+    font-size: clamp(2rem, 4vw, 3.4rem);
+    line-height: 1.05;
+}
+.secao-titulo p:last-child,
+.card p,
+.bloco-guia p,
+.dicas p,
+.formulario label,
+.rodape p,
+li {
+    line-height: 1.7;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+.card,
+.bloco-guia,
+.painel-planejamento {
+    background: rgba(255, 255, 255, 0.84);
+    border: 1px solid var(--borda);
+    box-shadow: var(--sombra);
+    border-radius: 28px;
+}
+.card {
+    overflow: hidden;
+}
+.card figure {
+    margin: 0;
+}
+.card img {
+    height: 220px;
+    object-fit: cover;
+}
+.card figcaption {
+    padding: 0.8rem 1.4rem 0;
+    color: var(--texto-suave);
+    font-size: 0.92rem;
+}
+.card h3,
+.card p,
+.card ul,
+.link-card {
+    margin-left: 1.4rem;
+    margin-right: 1.4rem;
+}
+.card h3 {
+    margin-top: 0.6rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.65rem;
+}
+.card ul {
+    padding-left: 12rem;
+}
+.destaque-texto {
+    color: var(--oceano-profundo);
+}
+.link-card {
+    display: inline-block;
+    margin-bottom: 1.6rem;
+    font-weight: 700;
+    color: var(--coral);
+}
+.guia {
+    background: linear-gradient(180deg,
+    rgba(22, 166, 182, 0.08),
+    rgba(255, 250, 241, 0.7)),
+    linear-gradient(90deg,
+    rgba(255, 255, 255, 0.45),
+    rgba(255, 255, 255, 0.2));
+}
+.grade-guia {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.2rem;
+}
+.bloco-guia {
+    padding: 1.5rem;
+}
+.bloco-guia h3 {
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+    font-size: 1.35rem;
+}
+.destaque-guia {
+    background: linear-gradient(160deg,
+        rgba(10, 92, 120, 0.95)
+        rgba(22, 166, 182, 0.8)
+    );
+}
+.destaque-guia code {
+    color: #ffffff;
+}
+code {
+    padding: 0.15rem 0.4rem;
+    border-radius: 8px;
+    background: rgba(7, 59, 76, 0.08);
+    font-family: Consolas, monospace;
+}
+.painel-planejamento {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 1.4rem;
+    padding: 1.5rem;
+}
+.formulario {
+    display: grid;
+    gap: 0.85rem;
+}
+.formulario input,
+.formulario select {
+    background: #ffffff;
+}
+.formulario button {
+    background: var(--oceano);
+    color: #ffffff;
+    font-weight: 700;
+    cursor: pointer;
+}
+.dicas {
+    padding: 0.4rem 0.4rem 0.4rem 0;
+}
+.dicas h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+.rodape {
+    padding: 2rem 6vw 3rem;
+    color: var(--texto-suave);
+}
+
+/* Tratando com CSS o ambiente MOBILE com a TAG @media */
+
+@media (max-width: 980px) {
+    .cards,
+    .grade-guia,
+    .painel-planejamento {
+        grid-template-columns: 1fr;
+    }
+    .hero {
+        min-height: auto;
+        padding-bottom: 3rem;
+    }    
+}
+
+@media (max-width: 640px) {
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .menu-links {
+        flex-wrap: wrap;
+    }
+    .hero-conteudo {
+        padding-top: 4rem;
+    }
+    .secao,
+    .hero,
+    .rodape {
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
+    }
+
+}
+/* Segunda página hero */
+.hero-secundario {
+    background: linear-gradient(135deg,
+    rgba(7, 59, 76, 0.88),
+    rgba(235, 111, 77, 0.45)),
+    url("https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?auto=format&fit=crop&w=1600&q=80") center/cover
+    ;
+}
+
+/* Segunda página | grades e cartões */
+.grade-definicoes,
+.grade-recursos {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.2rem;
+}
+
+.card-definicao,
+.recurso,
+.quadro-info,
+.bloco-explicacao {
+    background: rgba(255, 255, 255, 0.86);
+    border: 1px solid var(--borda);
+    border-radius: 28px;
+    box-shadow: var(--sombra);
+}
+
+.card-definicao,
+.recurso,
+.bloco-explicacao {
+    padding: 1.5rem;
+}
+.card-definicao h3,
+.recurso h3,
+.coluna-info h3,
+.bloco-explicacao h3 {
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+    font-family: 'Fraunces', sans-serif;
+    font-size: 1.35rem;
+}
+.destaque-definicao {
+    background: linear-gradient(160deg,
+    rgba(235, 111, 77, 0.92),
+    rgba(245, 166, 35, 0.82))
+    ;
+    color: #ffffff;
+}
+.destaque-definicao code {
+    color: #ffffff;
+}
+.secao-suave {
+    background: linear-gradient(180deg,
+    rgba(243, 231, 201, 0.45),
+    rgba(255, 255, 255, 0.05)),
+    linear-gradient(180deg,
+    rgba(255, 255, 255, 0.25),
+    rgba(22, 166, 182, 0.05));
+}
+.quadro-info,
+.painel-duplo {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 1.4rem;
+}
+
+.quadro-info {
+    padding: 1.5rem;
+}
+.coluna-info {
+    padding: 0.4rem;
+}
+.lista-tags {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.7rem;
+    padding-left: 1.2rem;
+}
+/*  Segunda página - Formulário */
+.formulario-avancado textarea {
+    width: 100%;
+    padding: 0.95rem 1rem;
+    border-radius: 16px;
+    border: 1px solid rgba(7, 59, 76, 0.16);
+    font: inherit;
+    background: #ffffff;
+    resize: vertical;
+}
+.grupo-botoes {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+}
+.grupo-botoes button {
+    flex: 1 1 220px;
+}
+.botao-alternativo {
+    background: var(--coral) !important;
+}
+/* Segunda página com recursos HTML5 e CSS avançado */
+.painel-detalhes {
+    border: 1px solid rgba(7, 59, 76, 0.14);
+    border-radius: 18px;
+    padding: 1rem 1.1rem;
+    background: rgba(22, 166, 182, 0.05);
+}
+
+.painel-detalhes summary {
+    cursor: pointer;
+    font-weight: 700;
+}
+.bloco-editavel {
+    min-height: 130px;
+    padding: 1rem;
+    border: 2px dashed rgba(10, 92, 120, 0.35);
+    border-radius: 18px;
+    background: rgba(255, 250, 241, 0.8);
+}
+.area-drag {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.cartao-arrastavel,
+.alvo-drop {
+    min-height: 110px;
+    padding: 1rem;
+    border-radius: 20px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+.cartao-arrastavel {
+    background: linear-gradient(
+        160deg,
+        rgba(10, 92, 120,0.9),
+        rgba(22, 166, 182,0.75),
+    );
+    color: #ffffff;
+    cursor: grab;
+}
+.cartao-arrastavel.arrastando {
+    opacity: 0.55;
+    cursor: grabbing;
+}
+.alvo-drop {
+    border: 2px dashed rgba(235, 111, 77, 0.45);
+    background: rgba(243, 231, 201, 0.55);
+    align-content: start;
+    gap: 0.8rem;
+}
+.alvo-drop.drop-ativo {
+    border-color: var(--oceano);
+    background: rgba(22, 166, 182, 0.14);
+    transform: scale(1.01);
+}
+.titulo-drop {
+    margin: 0;
+    font-weight: 700;
+    color: var(--oceano-profundo);
+}
+.campo-revisao {
+    width: 100%;
+    padding: 0.95rem 1rem;
+    border-radius: 16px;
+    border: 1px solid rgba(7, 59, 76, 0.16);
+    font: inherit;
+}
+.barra-ferramentas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 1rem;
+}
+.menu-demo {
+    display: grid;
+    gap: 1rem;
+}
+.menu-acoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+.menu-acoes button,
+.barra-ferramentas button {
+    padding: 0.85rem 1.1rem;
+    border: 0;
+    border-radius: 999px;
+    background: rgba(7, 59, 76, 0.1);
+    color: var(--oceano-profundo);
+    font: inherit;
+    font-weight: 700;
+}
+.menu-acoes button {
+    background: rgba(235, 111, 77, 0.14);
+    color: #7a341f;
+}
+.painel-toolbar {
+    padding: 1.1rem 1.2rem;
+    border-radius: 20px;
+    border: 1px solid rgba(7, 59, 76, 0.14);
+    background: rgba(255, 250, 241, 0.82);
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+.painel-legenda {
+    margin: 0 0 0.45rem;
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--texto-suave);
+}
+.painel-toolbar p:last-child {
+    margin: 0;
+}
+.painel-toolbar.modo-normal {
+    background: rgba(255, 250, 241, 0.82);
+}
+.painel-toolbar.modo-destaque {
+    background: rgba(245, 166, 35, 0.2);
+    transform: scale(1.01);
+}
+.painel-toolbar.modo-compacto {
+    background: rgba(22, 166, 182, 0.12);
+    max-width: 28rem;
+}
+@media (max-width:980px) {
+    .grade-definicoes,
+    .grade-recursos,
+    .quadro-info,
+    .painel-duplo,
+    .area-drag,
+    .lista-tags {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Início terceira página : Mídias */
+/* Conteúdo a ser construído confome as intrução via CANVAS */
+/* Aplicar script JS, para gerar as demais páginas HTML5 > Paginas 2 e 3*/
+/* Nome e RA - 05/05/2026 */

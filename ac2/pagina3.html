@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Praias do Brasil | Áudios e Vídeos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero hero-midias" id="topo">
+    <nav class="menu" aria-label="Navegação principal">
+      <a class="logo" href="index.html">Praias do Brasil</a>
+      <ul class="menu-links">
+        <li><a href="#audios">Áudios</a></li>
+        <li><a href="#videos">Vídeos</a></li>
+        <li><a href="#youtube">YouTube</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero-conteudo">
+      <p class="eyebrow">Multimídia no HTML5</p>
+      <h1>Terceira página com exemplos de áudio e vídeo</h1>
+      <p class="descricao">
+        Esta página mostra como usar as tags <code>&lt;audio&gt;</code> e <code>&lt;video&gt;</code>
+        com arquivos locais, além de um exemplo de vídeo incorporado do YouTube.
+      </p>
+      <div class="acoes">
+        <a class="botao primario" href="#audios">Ver áudios</a>
+        <a class="botao secundario" href="#videos">Ver vídeos</a>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="secao" id="audios">
+      <div class="secao-titulo">
+        <p class="rotulo">Tag audio</p>
+        <h2>Exemplos de áudio direto de arquivos</h2>
+        <p>
+          Os exemplos abaixo usam arquivos locais. Para funcionar no navegador, coloque os
+          arquivos dentro da pasta <code>media</code> do projeto com os mesmos nomes usados aqui.
+        </p>
+      </div>
+
+      <div class="grade-midias">
+        <article class="bloco-midia">
+          <h3>Som das ondas</h3>
+          <p>Exemplo com arquivo <code>.mp3</code> para ambientar uma página sobre praias.</p>
+          <audio controls preload="metadata">
+            <source src="media/ondas-do-mar.mp3" type="audio/mpeg">
+            Seu navegador não suporta áudio em HTML5.
+          </audio>
+        </article>
+
+        <article class="bloco-midia">
+          <h3>Brisa do litoral</h3>
+          <p>Exemplo alternativo com arquivo <code>.ogg</code>, útil para compatibilidade.</p>
+          <audio controls preload="metadata">
+            <source src="media/brisa-litoral.ogg" type="audio/ogg">
+            Seu navegador não suporta áudio em HTML5.
+          </audio>
+        </article>
+
+        <article class="bloco-midia destaque-midia">
+          <h3>Estrutura usada</h3>
+          <p>
+            A tag <code>audio</code> aceita atributos como <code>controls</code>,
+            <code>autoplay</code>, <code>loop</code> e <code>muted</code>.
+          </p>
+          <pre class="bloco-codigo"><code>&lt;audio controls&gt;
+  &lt;source src="media/ondas-do-mar.mp3" type="audio/mpeg"&gt;
+&lt;/audio&gt;</code></pre>
+        </article>
+      </div>
+    </section>
+
+    <section class="secao secao-suave" id="videos">
+      <div class="secao-titulo">
+        <p class="rotulo">Tag video</p>
+        <h2>Exemplos de vídeo direto de arquivos</h2>
+        <p>
+          O HTML5 também permite reproduzir vídeos locais. Os exemplos abaixo esperam arquivos
+          dentro da pasta <code>media</code>.
+        </p>
+      </div>
+
+      <div class="grade-midias">
+        <article class="bloco-midia">
+          <h3>Passeio na praia</h3>
+          <p>Vídeo local em <code>.mp4</code> com controles nativos do navegador.</p>
+          <video controls preload="metadata" poster="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80">
+            <source src="media/passeio-na-praia.mp4" type="video/mp4">
+            Seu navegador não suporta vídeo em HTML5.
+          </video>
+        </article>
+
+        <article class="bloco-midia">
+          <h3>Mergulho no mar</h3>
+          <p>Exemplo com formato <code>.webm</code>, outra opção comum para vídeo na web.</p>
+          <video controls preload="metadata" poster="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=1200&q=80">
+            <source src="media/mergulho-no-mar.webm" type="video/webm">
+            Seu navegador não suporta vídeo em HTML5.
+          </video>
+        </article>
+
+        <article class="bloco-midia">
+          <h3>Estrutura usada</h3>
+          <p>
+            A tag <code>video</code> aceita <code>controls</code>, <code>poster</code>,
+            <code>width</code>, <code>height</code>, <code>loop</code> e mais.
+          </p>
+          <pre class="bloco-codigo"><code>&lt;video controls poster="capa.jpg"&gt;
+  &lt;source src="media/passeio-na-praia.mp4" type="video/mp4"&gt;
+&lt;/video&gt;</code></pre>
+        </article>
+      </div>
+    </section>
+
+    <section class="secao" id="youtube">
+      <div class="secao-titulo">
+        <p class="rotulo">Vídeo incorporado</p>
+        <h2>Exemplo de vídeo do YouTube</h2>
+        <p>
+          Quando o vídeo não está no projeto, podemos incorporar conteúdo externo com
+          <code>iframe</code>, como no exemplo abaixo.
+        </p>
+      </div>
+
+      <div class="grade-midias">
+        <article class="bloco-midia bloco-midia-largo">
+          <h3>Vídeo do YouTube sobre praias</h3>
+          <div class="video-embed">
+            <iframe
+              src="https://www.youtube.com/embed/Scxs7L0vhZ4"
+              title="Video sobre praias"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen></iframe>
+          </div>
+        </article>
+
+        <article class="bloco-midia">
+          <h3>Quando usar cada opção</h3>
+          <ul>
+            <li>Use <code>audio</code> e <code>video</code> quando os arquivos estiverem no seu projeto.</li>
+            <li>Use <code>iframe</code> quando quiser incorporar vídeos hospedados no YouTube.</li>
+            <li>Prefira arquivos organizados em uma pasta como <code>media</code>.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="secao secao-suave">
+      <div class="secao-titulo">
+        <p class="rotulo">Organização</p>
+        <h2>Arquivos esperados na pasta media</h2>
+      </div>
+
+      <article class="bloco-midia bloco-midia-largo">
+        <pre class="bloco-codigo"><code>media/
+├─ ondas-do-mar.mp3
+├─ brisa-litoral.ogg
+├─ passeio-na-praia.mp4
+└─ mergulho-no-mar.webm</code></pre>
+        <p class="nota-midia">
+          Depois de colocar esses arquivos na pasta <code>media</code>, os exemplos locais
+          passarão a funcionar automaticamente.
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>Terceira página do projeto: exemplos de áudio e vídeo em HTML5.</p>
+    <p>Inclui mídias locais e incorporação de vídeo do YouTube.</p>
+  </footer>
+</body>
+</html>

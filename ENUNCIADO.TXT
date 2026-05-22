@@ -1,0 +1,210 @@
+📌📘 AC2 – Avaliação Continuada 2 – Linguagens de Programação
+📘 AC2 – Avaliação Continuada 2 – Linguagens de Programação
+👨‍🏫 Professor: Abimael de Oliveira Silva
+🧾 Curso: Análise e Desenvolvimento de Sistemas (ADS)
+🥇 Turma: AS009TSN2 – Linguagens de Programação
+📔 Nota Máxima: 8,0
+📝 Distribuição:
+
+28 questões teóricas (6,0 pontos no total) → ~0,20 ponto por questão
+
+4 questões práticas (2,0 pontos no total) → 0,50 ponto por questão
+
+🎯 Objetivo da AC2
+A AC2 foi construída para avaliar:
+
+✔ domínio conceitual de HTML5 e CSS;
+✔ interpretação técnica;
+✔ raciocínio visual;
+✔ construção prática de layouts;
+✔ aplicação correta de seletores e propriedades;
+✔ entendimento de responsividade e comportamento visual.
+
+👉 Nesta avaliação, o aluno deverá demonstrar:
+
+📌 teoria + prática + organização + interpretação.
+
+📚 Conteúdos Abrangidos na AC2
+🌐 HTML5
+✔ Estrutura semântica
+✔ Tags estruturais (header, main, section, article, footer)
+✔ Formulários HTML5
+✔ Inputs e atributos
+✔ Multimídia (audio, video, iframe)
+✔ Navegação com âncoras
+✔ Organização de conteúdo
+
+🎨 CSS
+✔ Sintaxe CSS
+✔ Cascata
+✔ Herança
+✔ Especificidade
+✔ CSS inline, interno e externo
+✔ Classes e IDs
+✔ Pseudo-classes e pseudo-elementos
+✔ Box Model
+✔ Margin, Padding e Border
+✔ Display
+✔ Flexbox
+✔ CSS Grid
+✔ Responsividade (@media)
+✔ Gradientes
+✔ Sombras
+✔ Position (relative, absolute, fixed, sticky)
+✔ Float e Clear
+✔ Variáveis CSS (:root)
+
+🧪 Estrutura da Prova
+📚 Parte Teórica – 28 Questões
+A parte teórica conterá:
+
+✔ múltipla escolha;
+✔ verdadeiro ou falso;
+✔ completar código;
+✔ interpretação de CSS;
+✔ identificação de erros;
+✔ análise visual;
+✔ interpretação de layouts.
+
+💻 Parte Prática – 4 Questões (0,5 cada)
+As questões práticas deverão conter:
+
+✔ HTML estruturado;
+✔ CSS funcional;
+✔ imagens obrigatórias;
+✔ organização visual;
+✔ código comentado.
+
+🧩 QUESTÃO PRÁTICA 1 — CSS INLINE, INTERNO E EXTERNO
+🎯 Objetivo
+Demonstrar domínio das três formas de aplicação do CSS.
+
+📌 O aluno deverá:
+✔ criar uma página com:
+
+1 título
+3 parágrafos
+1 imagem
+1 legenda
+✔ utilizar:
+
+CSS inline
+CSS interno (<style>)
+CSS externo (style.css)
+✔ explicar em comentário:
+
+👉 qual estilo prevaleceu e por quê.
+
+📦 Entrega
+pratica1.html
+style.css
+🧩 QUESTÃO PRÁTICA 2 — FLEXBOX + CARDS RESPONSIVOS
+🎯 Objetivo
+Construir cards modernos utilizando Flexbox.
+
+📌 O aluno deverá:
+✔ criar uma seção com:
+
+4 cards
+imagem em cada card
+título
+descrição
+✔ utilizar:
+
+display: flex;
+flex-wrap: wrap;
+gap:
+✔ aplicar:
+
+border-radius
+box-shadow
+hover
+transition
+📌 Responsividade obrigatória
+Ao diminuir a tela:
+
+✔ os cards devem quebrar linha corretamente.
+
+📦 Entrega
+pratica2.html
+style.css
+🧩 QUESTÃO PRÁTICA 3 — GRID + HERO + RESPONSIVIDADE
+🎯 Objetivo
+Criar layout moderno utilizando CSS Grid.
+
+📌 O aluno deverá:
+✔ criar:
+
+hero com imagem de fundo
+gradiente
+menu
+seção com grid de conteúdo
+✔ utilizar:
+
+display: grid;
+grid-template-columns:
+✔ aplicar:
+
+overlay com linear-gradient
+responsividade com @media
+imagens responsivas
+📦 Entrega
+pratica3.html
+style.css
+🧩 QUESTÃO PRÁTICA 4 — MULTIMÍDIA + POSITION + RESPONSIVIDADE
+🎯 Objetivo
+Aplicar recursos multimídia e posicionamento CSS.
+
+📌 O aluno deverá criar:
+✔ uma página contendo:
+
+vídeo HTML5
+áudio HTML5
+iframe do YouTube
+bloco de código
+botão fixo (position: fixed)
+✔ aplicar:
+
+position: fixed
+position: sticky
+responsividade
+cards organizados
+📌 Obrigatório
+✔ vídeo responsivo;
+✔ áudio funcionando;
+✔ iframe ajustado corretamente.
+
+📦 Entrega
+pratica4.html
+style.css
+📦 Estrutura obrigatória de entrega
+AC2_NomeSobrenome/
+│
+├── pratica1.html
+├── pratica2.html
+├── pratica3.html
+├── pratica4.html
+├── style.css
+│
+├── /img
+│
+└── /media
+📸 Evidências obrigatórias
+O aluno deverá apresentar:
+
+✔ páginas funcionando;
+✔ CSS carregando corretamente;
+✔ imagens renderizadas;
+✔ responsividade funcionando.
+
+🚨 Regras da Avaliação
+⛔ Avaliação presencial e individual
+🚫 Não será permitido consulta
+🚫 Não será permitido uso de celular
+🚫 Não haverá retrocesso em questões objetivas
+⚠️ Não saia da tela da prova durante as questões teóricas
+📖 Leia atentamente os enunciados
+🧩 A interpretação faz parte da avaliação
+
+🧑‍🏫 Prof. Abimael de Oliveira Silva
+UniFacens
