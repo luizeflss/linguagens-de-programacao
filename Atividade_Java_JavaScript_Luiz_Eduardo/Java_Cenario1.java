@@ -8,6 +8,6 @@ public class Java_Cenario1 {
         System.out.println("O número é: " + numero);
         
         // Se descomentar a linha abaixo, o código não compila (Erro de tipagem).
-        // numero = "dez"; 
+        // numero = "dez";
     }
 }
